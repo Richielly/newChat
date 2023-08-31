@@ -26,7 +26,6 @@ class Chatbot:
         question: {question}
         ======
         """
-
     QA_PROMPT = PromptTemplate(template=qa_template, input_variables=["context","question" ])
 
     def conversational_chat(self, query):
